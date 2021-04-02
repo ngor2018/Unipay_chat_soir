@@ -1,0 +1,16 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="loginbox">
+    <img src="~/img/4.png" alt="Alternate Text" class="logo_user" />
+    @*<h3 class="title_login">Veillez entrer vos données de connexion</h3>*@
+    <form action="Verifier" method="post">
+        <label class="lblemail">@*<i class="fa fa-user"></i>*@Login</label><br />
+        <input type="text" name="login" class="txtemail" placeholder="Entrer Login" required/><br />
+        <label class="lblpass">@*<i class="fa fa-unlock-alt" aria-hidden="true"></i>*@Password</label><br />
+        <input type="password" name="password" class="txtpass" placeholder="*********" required/><br />
+        <button type="submit" class="btnubmit">Se connecter</button><br />
+        @* @Html.ActionLink("Mot de passe oublie", "", "", new { area = "" }, new { @class = "btnforget" })*@
+    </form>
+</div> 
